@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/fontawesome-pro/css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/tailwinds.css" />
     <script src="./js/import.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js"></script>
@@ -12,10 +14,13 @@
           @apply max-w-[1200px] mx-auto px-4;
         }
         .button-md {
-          @apply px-[27px] py-[12px] bg-blue text-white rounded-full font-bold text-center;
+          @apply px-[27px] py-[12px] rounded-full font-bold text-center;
         }
         .button-lg {
-          @apply px-[50px] py-[20px] bg-blue text-white rounded-full font-bold text-center text-[24px];
+          @apply px-[50px] py-[20px] rounded-full font-bold text-center text-[24px];
+        }
+        .button-primary {
+          @apply bg-blue text-white;
         }
       }
       @layer utilities {
@@ -34,7 +39,10 @@
   </head>
   <body>
     <header data-imp="./components/common/header.html"></header>
-    <div data-imp="./components/pages/home/section1.html"></div>
+    <section data-imp="./components/pages/home/section1.html"></section>
+    <section data-imp="./components/pages/home/section2.html"></section>
+    <section data-imp="./components/pages/home/section3.html"></section>
+    <section data-imp="./components/pages/home/section4.html"></section>
     <header data-imp="./components/common/footer.html"></header>
   </body>
 </html>
